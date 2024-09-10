@@ -23,6 +23,8 @@ public class AnswerProviderFactoryTest {
     public void test() throws InvalidPropertiesFormatException {
         assertEquals(questionFactory.find("2+5").getClass(), ArithmeticAnswerProvider.class);
         assertEquals(questionFactory.find(" 100 ").getClass(), ArithmeticAnswerProvider.class);
+        assertEquals(questionFactory.find(" 3 ^ 5 ").getClass(), ArithmeticAnswerProvider.class);
+
         assertEquals(questionFactory.find("hello").getClass(), PredefinedAnswerProvider.class);
         assertEquals(questionFactory.find("").getClass(), PredefinedAnswerProvider.class);
         assertEquals(questionFactory.find("  ").getClass(), PredefinedAnswerProvider.class);

@@ -38,10 +38,12 @@ If you’d like to build and run the project locally, make sure your system has 
 2. When a question is asked, the ***AnswerProviderFactory*** selects the appropriate answer provider.
 3. Two answer providers are currently supported:
    - ***ArithmeticAnswerProvider***: Handles mathematical questions.
-   - ***PredefinedAnswerProvider***: Finds the most semantically similar predefined question and provides the corresponding answer. If no match is found, it responds with “Unable to answer.”
+   - ***PredefinedAnswerProvider***: Finds the most semantically similar predefined question and provides the corresponding answer. The similarity is calculated using a Python script powered by the spaCy NLP library. If no match is found, it responds with “Unable to answer.”
 4. The game is then ready to process the next question.
 
 ### Extensibility
+#### Database access
+Currently, predefined questions are stored in a JSON file. In the future, if we want to store these questions in a database, it can be done easily by implementing a ***PredefinedQuestionRepository*** interface for database access.
 #### Adding a New Predefined Question
 Predefined questions are stored in a JSON file and can be easily updated. To add a new question, simply append a new JSON object with the `question` and `answer` fields.
 #### Adding a New Answer Provider
