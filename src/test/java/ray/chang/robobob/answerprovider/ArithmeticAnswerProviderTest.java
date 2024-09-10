@@ -29,7 +29,8 @@ public class ArithmeticAnswerProviderTest {
                 "5 ^ 2", "25.0",
                 "7 *  8", "56.0",
                 "1 /2 ", "0.5",
-                "2*10.5+1", "22.0"
+                "2*10.5+1", "22.0",
+                "(-3) ^ (1/3)", "NaN"
         );
 
         for (String question : questionAnswerMap.keySet()) {
