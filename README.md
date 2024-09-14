@@ -38,7 +38,7 @@ If you’d like to build and run the project locally, make sure your system has 
 2. When a question is asked, the ***AnswerProviderFactory*** selects the appropriate answer provider.
 3. Two answer providers are currently supported:
    - ***ArithmeticAnswerProvider***: Handles mathematical questions.
-   - ***PredefinedAnswerProvider***: Finds the most semantically similar predefined question and provides the corresponding answer. The similarity is calculated using a Python script powered by the spaCy NLP library. If no match is found, it responds with “Unable to answer.”
+   - ***PredefinedAnswerProvider***: Finds the most semantically similar predefined question and provides the corresponding answer. The similarity is calculated using a Python script powered by the spaCy **NLP** library. If no match is found, it responds with “Unable to answer.”
 4. The game is then ready to process the next question.
 
 ### Extensibility
@@ -55,8 +55,8 @@ Once completed, the new provider will be automatically detected by AnswerProvide
 
 ## Challenges
 - Finding the optimal threshold for determining question similarity has been challenging.
-- The NLP model may require additional training for better accuracy.
 - Performance improvements are needed to handle and process user questions more efficiently.
+- Implementing machine learning models, along with a feedback loop, can help improve accuracy by allowing the system to better understand user queries and continuously refine its responses based on user feedback.
 
 
 
