@@ -29,7 +29,7 @@ If you’d like to build and run the project locally, make sure your system has 
 - ***AnswerProvidable***: This interface defines how questions are answered. Once a question is asked, an appropriate implementation of this interface is selected to provide an answer.
   - ***answer(String question)***: Provides the answer to the question.
   - ***belongsToThis(String question)***: Determines whether the current question can be handled by this answer provider.
-- ***AnswerProviderFactory***: Implements the Simple Factory Pattern. It takes the user question as input and returns the most suitable AnswerProvidable implementation.
+- ***AnswerProviderFactory***: Implements the Factory Pattern. It takes the user question as input and returns the most suitable AnswerProvidable implementation.
 - ***SimilarityService***: Calculates the semantic similarity between user-asked questions and predefined questions to find the closest match.
 - ***PredefinedQuestion***: Stores predefined questions and answers. These questions are persisted in a JSON file and loaded into memory when the game starts.
 
