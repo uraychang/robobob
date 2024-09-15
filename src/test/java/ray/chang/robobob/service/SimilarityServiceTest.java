@@ -20,7 +20,7 @@ public class SimilarityServiceTest {
 
     @Test
     public void testCalculateSimilarity() throws InvalidPropertiesFormatException {
-        final String askingName = "what is your name?";
+        final String askingName = "your name?";
         System.out.println("testing question: " + askingName);
 
         List<String> similarSentences = List.of(
