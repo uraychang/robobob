@@ -25,6 +25,10 @@ If you’d like to build and run the project locally, make sure your system has 
 - **spaCy** (for Python NLP capabilities)
 
 ## Design
+### Framework
+- **Spring Boot**
+- **Spring Shell**
+
 ### Core Entities
 - ***AnswerProvidable***: This interface defines how questions are answered. Once a question is asked, an appropriate implementation of this interface is selected to provide an answer.
   - ***answer(String question)***: Provides the answer to the question.
